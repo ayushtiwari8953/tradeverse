@@ -21,7 +21,7 @@ const Holdings = () => {
       // console.log(res.data);
       setAllPositions(res.data);
     });
-  }, []);
+  }, [setAllPositions]);
 
 
   // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
