@@ -223,6 +223,7 @@ app.post("/newOrder", async (req, res) => {
     qty: req.body.qty,
     price: req.body.price,
     mode: req.body.mode,
+     type: "BUY", 
   });
 
   await newOrder.save();

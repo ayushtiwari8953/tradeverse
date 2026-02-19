@@ -1,4 +1,4 @@
-import React, { useContext,useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
 import axios from "axios";
@@ -11,12 +11,12 @@ const SellActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
 
-const { closeSellWindow } = useContext(GeneralContext);
+  const { closeSellWindow } = useContext(GeneralContext);
 
   const handleSellClick = async () => {
     console.log("🔥 SELL BUTTON CLICKED");
-    
-    await axios.post("https://tradeverse-1-klk5.onrender.com/newOrder", {
+
+    await axios.post("https://tradeverse-2-6p8a.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
@@ -62,12 +62,18 @@ const { closeSellWindow } = useContext(GeneralContext);
       <div className="buttons">
         <span>Margin required ₹140.65</span>
         <div>
-          <button className="btn btn-blue" onClick={handleSellClick}>
+          <Link className="btn btn-blue" onClick={handleSellClick}>
+            Sell
+          </Link>
+          <Link to="" className="btn btn-grey" onClick={handleCancelClick}>
+            Cancel
+          </Link>
+          {/* <button className="btn btn-blue" onClick={handleSellClick}>
             Sell
           </button>
           <button to="" className="btn btn-grey" onClick={handleCancelClick}>
             Cancel
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

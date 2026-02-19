@@ -218,4 +218,15 @@
     background: #9b9b9b;
     color: #fff;
   }
+
+.buy-text {
+  color: #4184f3;
+  font-weight: 600;
+  background: none !important;
+}
+
+  /* .buy {
+  color: #2ecc71;
+  font-weight: bold;
+} */
   

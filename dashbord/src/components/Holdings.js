@@ -10,14 +10,14 @@ const Holdings = () => {
   // const [newOrder, setnewOrder ] = useState([]);
 
   useEffect(() => {
-    axios.get("https://tradeverse-1-klk5.onrender.com/allHoldings").then((res) => {
+    axios.get("https://tradeverse-2-6p8a.onrender.com/allHoldings").then((res) => {
       // console.log(res.data);
       setAllHoldings(res.data);
     });
   }, []);
 
   useEffect(() => {
-    axios.get("https://tradeverse-1-klk5.onrender.com/allPositions").then((res) => {
+    axios.get("https://tradeverse-2-6p8a.onrender.com/allPositions").then((res) => {
       // console.log(res.data);
       setAllPositions(res.data);
     });

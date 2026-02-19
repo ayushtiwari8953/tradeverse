@@ -218,4 +218,17 @@
     background: #9b9b9b;
     color: #fff;
   }
+
+
+  .sell-text {
+  color: #df514c;
+  font-weight: 600;
+  background: none !important;
+}
+/* 
+  .sell {
+  color: #e74c3c;
+  font-weight: bold;
+} */
+
   

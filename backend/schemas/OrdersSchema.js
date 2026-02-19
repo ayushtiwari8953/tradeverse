@@ -5,6 +5,11 @@ const OrdersSchema = new Schema({
   qty: Number,
   price: Number,
   mode: String,
+   type: {
+    type: String,
+    enum: ["BUY", "SELL"],
+    required: true,
+  },
 });
 
 module.exports =  OrdersSchema ;
