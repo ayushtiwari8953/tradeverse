@@ -7,6 +7,7 @@ import { holdings } from "../data/data";
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
   const [setAllPositions] = useState([]);
+  
   // const [newOrder, setnewOrder ] = useState([]);
 
   useEffect(() => {
