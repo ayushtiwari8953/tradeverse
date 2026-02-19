@@ -16,7 +16,7 @@ const { closeSellWindow } = useContext(GeneralContext);
   const handleSellClick = async () => {
     console.log("🔥 SELL BUTTON CLICKED");
     
-    await axios.post("http://localhost:3002/newOrder", {
+    await axios.post("https://tradeverse-1-klk5.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

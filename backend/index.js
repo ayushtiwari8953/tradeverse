@@ -230,6 +230,13 @@ app.post("/newOrder", async (req, res) => {
   res.send("Order saved!!");
 });
 
+
+app.get("/newOrder", async (req, res) => {
+  const orders = await Order.find();
+  res.json(orders);
+});
+
+
 app.listen(PORT, () => {
   console.log("App started!");
   mongoose.connect(uri);

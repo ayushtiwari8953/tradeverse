@@ -7,20 +7,22 @@ import { holdings } from "../data/data";
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
   const [allPositions, setAllPositions] = useState([]);
+  // const [newOrder, setnewOrder ] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings").then((res) => {
+    axios.get("https://tradeverse-1-klk5.onrender.com/allHoldings").then((res) => {
       // console.log(res.data);
       setAllHoldings(res.data);
     });
   }, []);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allPositions").then((res) => {
+    axios.get("https://tradeverse-1-klk5.onrender.com/allPositions").then((res) => {
       // console.log(res.data);
       setAllPositions(res.data);
     });
   }, []);
+
 
   // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   const labels = allHoldings.map((subArray) => subArray["name"]);

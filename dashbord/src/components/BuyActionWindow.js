@@ -15,7 +15,7 @@ const BuyActionWindow = ({ uid }) => {
   // const { closeSellWindow } = useContext(GeneralContext);
 
   const handleBuyClick = async () => {
-    await axios.post("http://localhost:3002/newOrder", {
+    await axios.post("https://tradeverse-1-klk5.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
@@ -25,27 +25,9 @@ const BuyActionWindow = ({ uid }) => {
     closeBuyWindow();
   };
 
-//   const placeOrder = async (mode) => {
- 
-//      await axios.post("http://localhost:3002/newOrder", {
-//       name: uid,
-//       qty: Number(stockQuantity),
-//       price: Number(stockPrice),
-//       mode: mode,
-//     });
-
-//     console.log("ORDER SUCCESS:", res.data);
-
-//     if (mode === "BUY") closeBuyWindow();
-//     if (mode === "SELL") closeSellWindow();
-
-//   } 
-// };
-
 
   const handleCancelClick = () => {
     closeBuyWindow();
-    // closeSellWindow();
   };
   
 
@@ -83,9 +65,6 @@ const BuyActionWindow = ({ uid }) => {
           <Link className="btn btn-blue" onClick={handleBuyClick}>
             Buy
           </Link>
-          {/* <Link className="btn btn-blue" onClick={placeOrder}>
-            Sell
-          </Link> */}
           <Link to="" className="btn btn-grey" onClick={handleCancelClick}>
             Cancel
           </Link>
