@@ -232,7 +232,7 @@ app.post("/newOrder", async (req, res) => {
 
 
 app.get("/newOrder", async (req, res) => {
-  const orders = await Order.find();
+  const orders = await OrdersModel.find({});
   res.json(orders);
 });
 
