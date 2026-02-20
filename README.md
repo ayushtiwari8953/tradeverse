@@ -13,6 +13,26 @@ This project demonstrates **complete end-to-end full stack development**, includ
   
 - **Frontend (Landing Page):** https://your-frontend-link.vercel.app
 
+
+## ✨ Key Features
+
+- 📊 Live Holdings & Positions Tracking  
+- 🛒 Buy & Sell Order Placement  
+- 🧾 Orders History Management  
+- 🔄 Real-Time Data Fetching from Backend  
+- 📈 Dynamic Profit & Loss Calculation  
+- 🖥 Interactive Trading Dashboard  
+- ⚡ Fast API Performance  
+- 🌐 Full Cloud Deployment  
+
+---
+
+## 🖼 Screenshots
+
+> Add screenshots of your project UI here.
+
+
+
 Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
