@@ -7,11 +7,11 @@ This project demonstrates **complete end-to-end full stack development**, includ
 
 ## 🌐 Live Project Links
 
-- **Dashboard:** https://tradeverse-7exb.vercel.app/
+- *Frontend (Landing Page): https://tradeverse-kyo5.vercel.app/
   
-- **Backend API:** https://tradeverse-2-6p8a.onrender.com
+- *Dashboard: https://tradeverse-7exb.vercel.app/
   
-- **Frontend (Landing Page):** https://your-frontend-link.vercel.app
+- *Backend API: https://tradeverse-2-6p8a.onrender.com
 
 
 ## ✨ Key Features
